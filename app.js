@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var multer = require('multer');
 var upload = multer({dest: __dirname + '/uploads'});
 var app = express();
-var port = 3000;
+var PORT = process.env.PORT || 3000;
 
 
 app.use('/public', express.static(__dirname + '/public'));
@@ -25,6 +25,6 @@ app.get('/index', (req, res) => {
 //   res.end("fit.jpg");
 // })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
