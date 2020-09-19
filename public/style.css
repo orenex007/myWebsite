@@ -1,35 +1,113 @@
-/****** Main Styling ******/
+/*a.custom-logo-link {
+    display: none;
+}*/
 
-body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #222;
-	background-color: #ECF0F1;
-	text-align: center;
-}
+/** global element styling **/
 
-.container {
+/* dinofit.html ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
 	padding: 0;
-	margin-top: 40px;
+	margin: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	font-family: 'Pacifico', cursive;
+	font-weight: 7000;
 }
 
-.footer {
-	margin-top: 60px;
+body{
+	background: #fff;
+	/*background: #111;*/
+	overflow: auto;
+	overflow-x: hidden;
+}
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
 }
 
-ol {
-	list-style-position: inside;
-}
-ul {
-	list-style-type: none;
+#landing-header h1 {
+  color: #fff;
 }
 
-a {
-	color: #2574A9;
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-/****** Logo Div Styling ******/
 
-img {
-	margin: 20px auto 0 auto;
-	display: block;
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
 }
+
+.slideshow li:nth-child(1) { 
+  background-image: url(https://scontent.fsdv1-2.fna.fbcdn.net/v/t1.0-9/13590280_1351898721490952_563163599627057196_n.jpg?_nc_cat=110&_nc_sid=a9b1d2&_nc_ohc=vBMQiCf4_eAAX_JZAI1&_nc_ht=scontent.fsdv1-2.fna&oh=116aadc9c0141eeb71f05f0ce7f1debb&oe=5F8CCD19) 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://scontent.fsdv1-2.fna.fbcdn.net/v/t31.0-8/12657418_1239513002729525_8813946736682911988_o.jpg?_nc_cat=104&_nc_sid=a9b1d2&_nc_ohc=_uRcXJzc7dsAX-FlZ5f&_nc_ht=scontent.fsdv1-2.fna&oh=66729ff5d80b87c10e9a1438824316b4&oe=5F8D55CB);
+  background-position: 50% 10%;
+  background-size: 1900px 880px;
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(https://scontent.fsdv1-2.fna.fbcdn.net/v/t1.0-9/13533027_1347039385310219_433358923551433017_n.jpg?_nc_cat=100&_nc_sid=a9b1d2&_nc_ohc=2R2_uIhIfDAAX8HhUjq&_nc_ht=scontent.fsdv1-2.fna&oh=3b945817c71a2009edfc3a2623af6c81&oe=5F8B5628);
+  background-position: 50% 20%;
+  animation-delay: 20s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://scontent.fsdv1-2.fna.fbcdn.net/v/t31.0-8/15590899_1542173705796785_6190852105175555251_o.jpg?_nc_cat=100&_nc_sid=a9b1d2&_nc_ohc=dwHyoYLbKjgAX-Z7LpI&_nc_ht=scontent.fsdv1-2.fna&oh=65edcb7b00d0c962a9bc3eee47d04c85&oe=5F8BF116);
+  animation-delay: 30s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://scontent.fsdv1-2.fna.fbcdn.net/v/t1.0-9/13590280_1351898721490952_563163599627057196_n.jpg?_nc_cat=110&_nc_sid=a9b1d2&_nc_ohc=vBMQiCf4_eAAX_JZAI1&_nc_ht=scontent.fsdv1-2.fna&oh=116aadc9c0141eeb71f05f0ce7f1debb&oe=5F8CCD19);
+  animation-delay: 40s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+
+/* index.html =================================================================================== */
+
+
+/*go to file "index.css(* and body only)" */
