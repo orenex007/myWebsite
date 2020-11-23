@@ -25,13 +25,13 @@ $(document).ready(function(){
 	});
 	//typing animation script(from website of cdnjs)
 	var typed = new Typed(".typing-1", {
-		strings: ["Websiter", "Developer", "Front-end", "Freelancer"],
+		strings: ["Developer", "Freelancer"],
 		typeSpeed: 100,
 		backSpeed: 60,
 		loop: true
 	});	
 	var typed = new Typed(".typing-2", {
-		strings: ["Websiter", "Developer", "Front-end", "Freelancer"],
+		strings: ["Developer", "Freelancer"],
 		typeSpeed: 100,
 		backSpeed: 60,
 		loop: true
