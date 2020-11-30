@@ -52,7 +52,7 @@ html{
 
 .navbar .logo a span{
 	color: #1c90b2;
-	transition: all 0.3s ease
+	transition: all 0.3s ease;
 }
 
 .navbar.sticky .logo a span{ /*IMPORTANT! .navbar.sticky is different!*/
@@ -310,7 +310,7 @@ section .title::after{
 	text-align: justify;
 }
 
-.about .about-content .right a{
+.about .about-content .right a{ /********* i delete in html this   **************/
 	display: inline-block;
 	background: skyblue;
 	color: #fff;
@@ -321,7 +321,7 @@ section .title::after{
 	border: 3px solid darkgreen;
 	transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+.about .about-content .right a:hover{ /********* i delete in html this   **************/
 	color: skyblue;
 	background: none;
 }
